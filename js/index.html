@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home/bikram/Desktop/javascriptprc/js/static/style.css">
+    <title>Javascript Chalenges</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2 class="first">Challenge1 :What is your Age in Days</h2>
+        <div class="flex-container">
+            <div><button class="btn btn-primary" onclick="ageInDays()">Hit Me</button></div>
+            <div> <button class="btn btn-danger" onclick="reset()">Reset</button></div>
+        </div>
+
+        <div class="flex-container">
+            <div id="flex-result">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2:Horse Generator.</h2>
+        <button class="btn btn-success" id="generate" onclick="horseGenerator()">Generate Horse.</button>
+        <button class="btn btn-danger" id="degenerate" onclick="horseDegen()">Degenerate</button>
+        <div class="flex-container2" id="hrs-gen">
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Challenge 3:Rock ,Paper,Sissor</h2>
+        <div class="flex-rps" id="flex-rps-div">
+            <img src="/home/bikram/Downloads/rock.png" alt="" id="rock" height="150" width="150" onclick="rpsGame(this)">
+            <img src="/home/bikram/Downloads/paper.png" alt="" id="paper" height="150" width="150" onclick="rpsGame(this)">
+            <img src="/home/bikram/Downloads/scissor.png" alt="" id="scissor" height="150" width="150" onclick="rpsGame(this)">
+
+        </div>
+    </div>
+    <div class="container-4">
+        <h2>Challenge 4:Change The Colors Of The Button</h2>
+        <div class="flex-pic-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonChangeColor(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wooie!</button>
+            <button class="btn btn-danger">Google!</button>
+            <button class="btn btn-warning">Youtube!</button>
+            <button class="btn btn-success">Facebook!</button>
+
+        </div>
+    </div>
+    <!-- CHLLENGE 4:BLACKJACK PROJECT -->
+    <div class="container-5">
+        <h2>Challenge 5:Blackjack Project.</h2>
+        <div> <span id="players"> Let's Play.</span></div>
+        <div class="row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-rslt">0</span> </h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-rslt">0</span> </h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <!-- YOU MIGHT NOT UNDERSTAND THS CLASS IT IS FROM BOOTSTRAP THE 
+                ( btn-lg will bigger the btn size and mr-2 will create margin) -->
+
+            <div>
+                <button class="btn-lg btn btn-primary mr-2" id="hit-btn">HIT</button>
+                <button class="btn-lg btn btn-warning mr-2" id="stand-btn">STAND</button>
+                <button class="btn-lg btn btn-danger mr-2" id="deal-btn">DEAL</button>
+            </div>
+
+        </div>
+        <div class="row-3">
+            <table class="rslt" style="border: 1px solid black;">
+                <tr style="border: 1px solid black;">
+                    <th style="border: 1px solid black;">WIN</th>
+                    <th style="border: 1px solid black;">LOOSE</th>
+                    <th style="border: 1px solid black;">TIE</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;"> <span id="wins">0</span></td>
+                    <td style="border: 1px solid black;"> <span id="loose">0</span></td>
+                    <td style="border: 1px solid black;"> <span id="tie"> 0</span></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="/home/bikram/Desktop/javascriptprc/js/static/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+html,body{
+    margin: 0;
+}
+#clear{
+    position: absolute;
+    top: 10px;
+    left:92em;
+    background-color: tomato;
+    color: rgb(21, 22, 22);
+    height: 30px;
+    width: 50px;
+    border: none;
+    
+        
+}

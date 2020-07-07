@@ -1,0 +1,46 @@
+body{
+    font-family: serif,monospace,sans-serif;
+    font-size: 16px;
+    /* color: white; */
+    line-height: 1.6em;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: tomato;
+    border: 0;
+    font-size: 20px;
+}
+button:hover{
+    color: white;
+    background-color: rgba(202, 85, 17, 0.856);
+}
+
+.content{
+    position: fixed;
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.7),0 7px 20px 0 ;
+}
+.close{
+    color: rgb(192, 179, 179);
+    float: right;
+    font-size: 30px;
+}
+.close:hover{
+    color: rgb(73, 72, 70);
+    font-size: 32px;
+    cursor: pointer;
+}

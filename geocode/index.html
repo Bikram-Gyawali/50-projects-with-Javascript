@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google Map</title>
+    <style>
+        #map {
+          height: 100vh;
+        }
+        html, body {
+          height: 100vh;
+          margin: 10;
+          padding: 10;
+        }
+      </style>
+      
+</head>
+<body>
+    <h1>My Google Map</h1>  
+
+    <div id="map"></div>
+
+        <script>
+// 27.7172° N, 85.3240° E
+        function initMap(){
+            var options = {
+                zoom:2,
+                center:{lat: 27.7172,lng:85.3240}
+            }
+            var map = new google.maps.Map(document.getElementById('map'),options);
+        }
+    </script>
+    <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeDgE0B4aMirU19VfXV02Wim9SOasiCyc&callback=initMap">
+
+</script>
+      
+</body>
+</html>

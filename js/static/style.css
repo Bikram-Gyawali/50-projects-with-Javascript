@@ -1,0 +1,116 @@
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.flex-container,
+.flex-container2,
+.flex-rps,
+.flex-pic-color,
+.row-1,
+.row-2,
+.row-3 {
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-container div {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+/* Challenge 2 cat genertor */
+
+
+/*BELOW CODE ARE COMMENTED TO AVOID CODE REPETTION.IT IS USED ABOVE  */
+
+
+/* .container-2{
+    margin:0 auto;
+    border: 1px solid red;
+    width: 75%;
+    text-align: center;
+} 
+ .flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+} */
+
+.flex-container2 img {
+    padding: 10px;
+    border: 1px solid green;
+    /* padding: 10px; */
+    -webkit-box-shadow: 26px 15px 77px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 26px 15px 77px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 26px 15px 77px -17px rgba(0, 0, 0, 0.75);
+}
+
+
+/* CHALLENGE 3:ROCK PAPER SCISSOR  */
+
+.flex-rps img:hover {
+    box-shadow: 26px 15px 77px -17px #0c8cf5dc;
+}
+
+
+/* CHALLENGE 5:BLACK JACK GAME  SOME CSS ARE ATTACHED UP INCODES BUJIS NI K VANNA KHOJEKO */
+
+.row-1,
+.row-2 {
+    background: url(/home/bikram/Downloads/banner3.jpg);
+    color: brown;
+}
+
+.row-1 div {
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    height: 350px;
+}
+
+.row-2 {
+    border: 1px solid blue;
+    display: flex;
+    flex: 1;
+}
+
+.row-2 div {
+    border: 1px solid rgb(247, 170, 6);
+    padding: 5px;
+}
+
+.row-2 button {
+    border: 2px solid blue;
+}
+
+.row-3 td,
+.row-3 th,
+.row-3 tr {
+    border: 1px solid black;
+    padding: 5px;
+    width: 30%;
+}
+
+img {
+    height: 120px;
+    width: 100px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Facts.</title>
+</head>
+<body>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+        .bg-dark{
+            height: 100vh;
+        }
+        #fact{
+            display: none;
+        }
+    </style>
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card bg-primary text-white mt-5 p-4">
+                        <h1>Number Facts</h1>
+                        <p>Enter a number and get random facts.</p>
+                        <input type="number" class="form-control form-control-lg " id="numberInput" placeholder="Enter any number..">
+                        <div id="fact" class="card-body">
+                            <div class="card-title">
+                                Number Facts
+                            </div>
+                            <p id="factText" class="card-text"></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
