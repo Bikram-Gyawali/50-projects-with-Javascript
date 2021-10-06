@@ -48,7 +48,7 @@ TypeWriter.prototype.type=function(){
       // Move to next word
       this.wordIndex++;
       // Pause before start typing
-      typeSpeed = 500;
+      typeSpeed = 1000;
     }
 
     setTimeout(()=>this.type(),typeSpeed);
